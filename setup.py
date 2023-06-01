@@ -3,7 +3,7 @@ from setuptools import find_packages,setup
 from typing import List
 
 def get_requirements() ->List[str]:
-    package_list=[]
+    package_list:List[str]=[]
     with open('requirements.txt','r') as f:
         for line in f:
             # Remove any leading/trailing whitespace
